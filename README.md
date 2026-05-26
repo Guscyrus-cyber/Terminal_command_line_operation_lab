@@ -128,20 +128,15 @@ auth.log
 
 Displays file contents.\
 Using: cat auth.log in the terminal bash\
-\
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 
 **less**
 
 Opens large files page-by-page for easier reading.\
 Using: less auth.log in the terminal bash
 
-Inside **less\
-There is**
-
-use ↑ ↓ arrows\
-press Space for next page\
-press q to quit
+Inside less
+There is
 
 **head**
 
@@ -187,17 +182,13 @@ searching failed events\
 sending results through pipeline \|\
 counting total events
 
-\
-\
-\
 Search Specific Attacker IP
-===========================
+
 
 Searches activity from one suspicious IP.
 
 Using: grep "203.0.113.45" auth.log
 
-------------------------------------------------------------------------
 
 We are investigating:
 
@@ -211,13 +202,11 @@ Counts how many events came from attacker IP.
 
 Using: grep "203.0.113.45" auth.log \| wc -l
 
-------------------------------------------------------------------------
 
 # Extract Only Failed Events from Attacker
 
 Using: grep "203.0.113.45" auth.log \| grep "failed"
 
-------------------------------------------------------------------------
 
 This is real investigation workflow:
 
@@ -226,7 +215,6 @@ isolate activity\
 identify failed attempts\
 build timeline
 
-------------------------------------------------------------------------
 
 # awk
 
@@ -234,7 +222,6 @@ Extracts/selects specific columns or fields.
 
 Using: grep "203.0.113.45" auth.log \| awk '{print \$1,\$2,\$6,\$7}'
 
-------------------------------------------------------------------------
 
 **Find Successful Logins**
 
@@ -287,35 +274,9 @@ Using: cd ~/Downloads/realistic_terminal_ops_lab
 Moves into firewall logs.
 
 Bash:\
-\
+
 cd logs/firewall\
 ls\
 cat firewall.log
 
-<img src="Realistic_terminal_ops_images/media/image1.png" style="width:6.5in;height:4.47431in" />\
-\
-\
-\
-\
-\
-<img src="Realistic_terminal_ops_images/media/image2.png" style="width:6.5in;height:4.33819in" alt="A screenshot of a computer Description automatically generated" />\
-\
-\
-\
-\
-<img src="Realistic_terminal_ops_images/media/image3.png" style="width:6.5in;height:4.32847in" alt="A screenshot of a computer Description automatically generated" />\
-\
-\
-\
-\
-<img src="Realistic_terminal_ops_images/media/image4.png" style="width:6.5in;height:4.32847in" alt="A screenshot of a computer Description automatically generated" />\
-\
-\
-\
-\
-\
-<img src="Realistic_terminal_ops_images/media/image5.png" style="width:6.5in;height:4.32847in" alt="A screenshot of a computer Description automatically generated" />\
-\
-\
-\
-<img src="Realistic_terminal_ops_images/media/image6.png" style="width:6.5in;height:4.32847in" alt="A screenshot of a computer Description automatically generated" />
+Ppease refer to imades in the repository for output.
