@@ -279,4 +279,4 @@ cd logs/firewall\
 ls\
 cat firewall.log
 
-Ppease refer to imades in the repository for output.
+Ppease refer to images in the repository for output.
